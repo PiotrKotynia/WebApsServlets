@@ -15,6 +15,16 @@
     <servlet-class>pl.sdacademy.SimpleServletWithLogger</servlet-class>
   </servlet>
 
+  <servlet>
+    <servlet-name>Dodaj</servlet-name>
+    <servlet-class>pl.sdacademy.DodajServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Dodaj</servlet-name>
+    <url-pattern>/dodaj</url-pattern>
+  </servlet-mapping>
+
   <servlet-mapping>
     <servlet-name>simpleServlet</servlet-name>
     <url-pattern>/hello</url-pattern>
