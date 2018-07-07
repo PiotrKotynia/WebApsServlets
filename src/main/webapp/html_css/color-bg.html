@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript introduction!</title>
+    <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<p>Napisz funkcję JS która będzie zmieniać kolor tła po zatwierdzeniu
+    przyciskiem "Zmień kolor"
+</p>
+
+<select id="color" onchange="color = this.value; ">
+    <option value="">Wybierz kolor</option>
+    <option value="red">Czerwony</option>
+    <option value="blue">Niebieski</option>
+    <option value="white">Biały</option>
+    <option value="green">Zielony</option>
+</select>
+<input type="button" value="Zmień kolor" onclick="changeColour()"/>
+
+<p>
+    Zmień zachowanie aby kolor zmieniał się zaraz po zmienie pola wyboru czyli
+    bez konieczności wciskania przycisku.
+</p>
+
+</body>
+</html>

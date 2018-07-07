@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Super Web Page!</title>
+    <link rel="stylesheet" type="text/css" href="stylesSuperWebPage.css">
+
+    <style>
+        canvas {
+            border:1px solid #d3d3d3;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+Zadania do zrealizowania z JavaScript
+<ul>
+    <li><a href="color-bg.html">Zadanie 1 - Zmiana koloru tła</a></li>
+    <li><a href="calc.html">Zadanie 2 - kalkulator</a></li>
+    <li><a href="forms.html">Zadanie 3 - Walidacja formularza</a></li>
+    <li><a href="jquery.html">Zadanie 4 - JQuery - wysuwany komponent</a></li>
+
+
+</ul>
+
+<body onload="startGame()">
+
+<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
+<p>Click the ACCELERATE button to start the game</p>
+<p>How long can you stay alive? Use the ACCELERATE button to stay in the air..</p>
+
+<div class="icon-bar">
+    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="#" class="google"><i class="fa fa-google"></i></a>
+    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+</div>
+
+<h2 style="background: #bb0000; color: gold">Formularz zadowolenia</h2>
+<br/>
+
+<div class="form-style-4">
+<form action="/dodaj">
+    First name:<br>
+    <input type="text" name="firstname" id="name">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname">
+    <br/>
+    How are you satisfied (1-bad, 5-excellent):<br>
+    <input list="zadowolenie" name="satisfaction">
+    <datalist id="zadowolenie">
+        <option value="1">
+        <option value="2">
+        <option value="3">
+        <option value="4">
+        <option value="5">
+    </datalist>
+    <br/>
+
+
+    <select name="satisfaction">
+        <option> 1 </option>
+        <option> 2 </option>
+        <option> 3 </option>
+        <option> 4 </option>
+        <option> 5 </option>
+        </select>
+
+    <br/>
+    <script src="js\script.js"></script>
+    <input type="submit" value="Submit" onclick="alert('Hello World!')">
+</form>
+</div>
+
+<script>
+    alert("aaaa");
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "changed text";
+    }
+</script>
+
+
+<h1> tytul strony</h1>
+<p style="font-size:25px;font-family:'Comic Sans MS';" id="demo" onclick="myFunction()">tutaj may param</p>
+<h4 style="color:blue;"> to jet inny tytlu</h4>
+
+<ul>
+    <li><i>to jest linijka</i></li>
+    <li>to jest linijka</li>
+    <li>to jest linijka</li>
+    <li>to jest linijka</li>
+    <li>to jest linijka</li>
+</ul>
+<img src="pobrany%20plik.jpg" alt="Italian Trulli" height="300" width="300">
+
+<div class="menu">
+<h2> o mnie </h2>
+<p>jakis tam teks dluuuugi bardzo</p>
+<br/>
+<br/>
+<h3>naglowek podrzedny</h3>
+<br/>
+<p><b>i drugi super tekst</b></p>
+<br/>
+<br/>
+</div>
+
+<ul style="dsplay:flex";>
+    <li><a href="file:///D:/Programy/xampp/htdocs/New%20Eureka.html">o mnie</a></li>
+    <li><a href="#Projects">cos tam</a></li>
+    <li><a href="#Reports">formularz</a></li>
+</ul>
+<table>
+    <tr>
+        <th>asd</th>
+        <th>asd</th>
+        <th>asd</th>
+    </tr>
+    <tr>
+        <td>asd asd</td>
+        <td>dupa dupa</td>
+        <td>sruututut</td>
+    </tr>
+    <tr>
+        <td>trorolor</td>
+        <td>bsadfgafg</td>
+        <td>vsdgrwgfwefe</td>
+    </tr>
+</table>
+
+<canvas id="myCanvas1" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+    var c = document.getElementById("myCanvas1");
+    var ctx = c.getContext("2d");
+    var grd = ctx.createLinearGradient(0,0,200,100);
+
+    grd.addColorStop(0,"red");
+    grd.addColorStop(0.5,"yellow");
+    grd.addColorStop(1,"green");
+
+
+    ctx.fillStyle = grd;
+    ctx.fillRect(0,0,200,100);
+    ctx.globalAlpha=1;
+    ctx.font ="1em 'Comic Sans MS'";
+    ctx.fillStyle = "white";
+    ctx.strokeStyle = "green";
+    ctx.shadowBlur=20;
+    ctx.shadowColor = "black";
+    ctx.shadowOffsetX = 5;
+    ctx.shadowOffsetY = 5;
+    ctx.fillText("Dawaj Świeżaki", 30,70);
+    ctx.strokeText("Hello World",10,50);
+    ctx.lineWidth=3;
+
+    ctx.beginPath();
+    ctx.moveTo(20, 10);
+    ctx.lineTo(180, 10);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(20, 90);
+    ctx.lineTo(180, 90);
+    ctx.stroke();
+</script>
+
+<br>
+
+
+    <form name='animation'>
+        <textarea name='cheerleader' rows='5' cols='20'></textarea><br>
+        <input type='button' value="Start Again" onclick ="javascript:tickundefined()">
+    </form>
+
+<br/>
+
+<button type="button"><a href="http://kwejk.pl" target="_blank">Kwejk</a></button>
+
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab"    >
+    <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+</div>
+
+<div id="London" class="tabcontent">
+    <h3>London</h3>
+    <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+    <h3>Paris</h3>
+    <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+    <h3>Tokyo</h3>
+    <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+<br/>
+
+<script>
+
+    var myGamePiece;
+    var myObstacles = [];
+    var myScore;
+
+    function startGame() {
+        myGamePiece = new component(30, 30, "red", 10, 120);
+        myGamePiece.gravity = 0.05;
+        myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+        myGameArea.start();
+    }
+
+    var myGameArea = {
+        canvas : document.createElement("canvas"),
+        start : function() {
+            this.canvas.width = 480;
+            this.canvas.height = 270;
+            this.context = this.canvas.getContext("2d");
+            document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+            this.frameNo = 0;
+            updateGameArea();
+        },
+        clear : function() {
+            this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+        }
+    }
+
+    function component(width, height, color, x, y, type) {
+        this.type = type;
+        this.score = 0;
+        this.width = width;
+        this.height = height;
+        this.speedX = 0;
+        this.speedY = 0;
+        this.x = x;
+        this.y = y;
+        this.gravity = 0;
+        this.gravitySpeed = 0;
+        this.update = function() {
+            ctx = myGameArea.context;
+            if (this.type == "text") {
+                ctx.font = this.width + " " + this.height;
+                ctx.fillStyle = color;
+                ctx.fillText(this.text, this.x, this.y);
+            } else {
+                ctx.fillStyle = color;
+                ctx.fillRect(this.x, this.y, this.width, this.height);
+            }
+        }
+        this.newPos = function() {
+            this.gravitySpeed += this.gravity;
+            this.x += this.speedX;
+            this.y += this.speedY + this.gravitySpeed;
+            this.hitBottom();
+        }
+        this.hitBottom = function() {
+            var rockbottom = myGameArea.canvas.height - this.height;
+            if (this.y > rockbottom) {
+                this.y = rockbottom;
+                this.gravitySpeed = 0;
+            }
+        }
+        this.crashWith = function(otherobj) {
+            var myleft = this.x;
+            var myright = this.x + (this.width);
+            var mytop = this.y;
+            var mybottom = this.y + (this.height);
+            var otherleft = otherobj.x;
+            var otherright = otherobj.x + (otherobj.width);
+            var othertop = otherobj.y;
+            var otherbottom = otherobj.y + (otherobj.height);
+            var crash = true;
+            if ((mybottom < othertop) || (mytop > otherbottom) || (myright < otherleft) || (myleft > otherright)) {
+                crash = false;
+            }
+            return crash;
+        }
+    }
+
+    function updateGameArea() {
+        var x, height, gap, minHeight, maxHeight, minGap, maxGap;
+        for (i = 0; i < myObstacles.length; i += 1) {
+            if (myGamePiece.crashWith(myObstacles[i])) {
+                return;
+            }
+        }
+        myGameArea.clear();
+        myGameArea.frameNo += 1;
+        if (myGameArea.frameNo == 1 || everyinterval(150)) {
+            x = myGameArea.canvas.width;
+            minHeight = 20;
+            maxHeight = 200;
+            height = Math.floor(Math.random()*(maxHeight-minHeight+1)+minHeight);
+            minGap = 50;
+            maxGap = 200;
+            gap = Math.floor(Math.random()*(maxGap-minGap+1)+minGap);
+            myObstacles.push(new component(10, height, "green", x, 0));
+            myObstacles.push(new component(10, x - height - gap, "green", x, height + gap));
+        }
+        for (i = 0; i < myObstacles.length; i += 1) {
+            myObstacles[i].x += -1;
+            myObstacles[i].update();
+        }
+        myScore.text="SCORE: " + myGameArea.frameNo;
+        myScore.update();
+        myGamePiece.newPos();
+        myGamePiece.update();
+    }
+
+    function everyinterval(n) {
+        if ((myGameArea.frameNo / n) % 1 == 0) {return true;}
+        return false;
+    }
+
+    function accelerate(n) {
+        if (!myGameArea.interval) {myGameArea.interval = setInterval(updateGameArea, 20);}
+
+        myGamePiece.gravity = n;
+    }
+</script>
+<br>
+
+
+</body>
+</html>
